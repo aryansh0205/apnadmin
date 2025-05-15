@@ -96,7 +96,7 @@ export default function AddStore() {
   const AddStoreUSER = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:5002/api/createuser`,
+        `${process.env.NEXT_PUBLIC_API}/createuser`,
         formData
       );
       console.log(res);
