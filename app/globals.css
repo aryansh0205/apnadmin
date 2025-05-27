@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  /* Metallic Black & White Palette */
+  --bg-base: #0a0a0a;         /* Deep metallic black */
+  --bg-surface: #121212;      /* Slightly elevated surfaces */
+  --bg-card: #1a1a1a;         /* Card backgrounds */
+  
+  --text-primary: #ffffff;    /* Pure white */
+  --text-secondary: #b3b3b3;  /* Light gray */
+  --text-tertiary: #808080;   /* Medium gray */
+  
+  --border-primary: #2a2a2a;  /* Dark borders */
+  --border-accent: #404040;   /* Lighter borders */
+  
+  --accent-primary: #ffffff;  /* White accent */
+  --accent-hover: #e6e6e6;    /* Slightly off-white */
+  
+  /* Status Colors (Monochromatic) */
+  --success: #4d4d4d;
+  --warning: #666666;
+  --danger: #999999;
+}
+
+/* Text Colors */
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-tertiary { color: var(--text-tertiary); }
+
+/* Backgrounds */
+.bg-base { background-color: var(--bg-base); }
+.bg-surface { background-color: var(--bg-surface); }
+.bg-card { background-color: var(--bg-card); }
+
+/* Borders */
+.border-primary { border-color: var(--border-primary); }
+.border-accent { border-color: var(--border-accent); }
+
+/* Accents */
+.text-accent { color: var(--accent-primary); }
+.bg-accent { background-color: var(--accent-primary); color: var(--bg-base); }
+.hover\:bg-accent:hover { background-color: var(--accent-hover); }
