@@ -181,6 +181,7 @@ export default function AddOffer() {
     try {
       await uploadImageToPresignedUrl(file);
     } catch (error) {
+      console.log(error);
       // Error is already handled in uploadImageToPresignedUrl
       // Keep the preview but show error state
     }
